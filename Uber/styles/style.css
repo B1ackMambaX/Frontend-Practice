@@ -129,3 +129,62 @@ nav {
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
     border-radius: 4px;
 }
+
+.reasons {
+    min-height: 850px;
+    padding: 20px 0 64px 0;
+}
+
+.reasons .reasons_advantages {
+    padding: 5px;
+    width: 113px;
+    margin: 0 auto;
+    height: 24px;
+    font-weight: 400;
+    font-size: 11px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.reasons .reasons_heading {
+    margin-top: 33px;
+    font-weight: 700;
+    font-size: 38px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #222222;
+}
+.reasons .reason_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 22px;
+}
+.reasons .reason_item .reason_round {
+    height: 116px;
+    width: 116px;
+    background-color: #1EACC7;
+    border-radius: 58px;
+    display: flex;
+    justify-content: center;
+}
+
+.reasons .reason_item .reason_round .reason_icon {
+    object-fit: none;
+}
+
+.reasons .reason_item .reason_descr {
+    width: 343px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 21px;
+    margin-left: 25px;
+}
+
+.reasons .reason_item .reason_descr span {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    color: #1EACC7;
+}
