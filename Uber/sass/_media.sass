@@ -1,0 +1,261 @@
+@media (max-width: 1200px)
+    .menu
+        &_item
+            padding-right: 20px
+        &_link
+            font-size: 13px
+    .promo
+        &_heading
+            font-size: 50px
+    .reason
+        &_item
+            align-items: flex-start
+            &_descr
+                width: 300px
+    footer
+        .apps
+            display: flex
+            flex-direction: column
+
+@media (max-width: 991px)
+    .menu
+        &_item
+            padding-right: 8px
+        &_link
+            font-size: 10px
+    .subheader
+        &_logo
+            img
+                width: 100%
+        &_official
+            font-size: 11px
+        &_phone
+            font-size: 18px
+        &_btn
+            width: 100%
+            height: 40px
+            margin-top: 21px
+    .promo
+        &_heading
+            font-size: 40px
+        &_subheading
+            font-size: 30px
+    .reason
+        &_item
+            flex-direction: column
+            align-items: center
+            &_descr
+                margin-top: 20px
+            &_round
+                margin-right: 0
+    .car
+        &_img
+            width: 100%
+        &_promo
+            margin-top: 90px
+
+@media (max-width: 767px)
+    .menu
+        position: fixed
+        top: 0
+        left: -100%
+        width: 50%
+        height: 100vh
+        padding: 20px 15px
+        flex-direction: column
+        background-color: rgba(0,0, 0, 0.8)
+        justify-content: center
+        align-items: center
+        z-index: 3
+        transition: 0.6s all
+        &_active
+            left: 0
+        &_item
+            padding-right: 0
+            border: none
+            margin-top: 20px
+        &_link
+            font-size: 20px
+    .hamburger
+        display: block
+        position: absolute
+        right: 10px
+        top: 50%
+        transform: translateY(-50%)
+        width: 26px
+        height: 12px
+        span
+            display: block
+            height: 2px
+            width: 100%
+            background-color: white
+            margin-bottom: 2px
+            transition: 0.5s all
+        &_active
+            span
+                margin-bottom: -2px
+                &:nth-child(1)
+                    transform: translateY(3px) rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(3px) rotate(45deg)
+    .xs-hidden
+        display: none
+    .xs-visiable
+        display: block
+    .subheader
+        &_phone
+            display: block
+            margin-top: 8px
+            color: #ffffffff
+            font-size: 16px
+            font-weight: 400
+            text-transform: uppercase
+            text-align: center
+        &_btn
+            display: block
+            width: 200px
+            height: 40px
+            margin: 0 auto
+            margin-top: 6px
+    .promo
+        &_heading
+            line-height: 45px
+    .car
+        &_promo
+            margin-top: 50px
+            color: white
+        &_bg
+            display: none
+    .mobile
+        &_item
+            width: 100%
+            height: 210px
+            padding-top: 60px
+            &_plus
+                bottom: 25px
+    footer
+        .social
+            width: 160px
+            margin-top: 10px
+            position: relative
+            left: 0
+            top: 0
+            margin: 0 auto
+        .apps
+            width: 285px
+            position: relative
+            flex-direction: row
+            right: 0
+            top: 0
+            margin: 0 auto
+            margin-top: 10px
+            
+            
+
+@media (max-width: 575px)
+    nav
+        height: 32px
+    .subheader
+        height: 60px
+        &_official
+            display: none
+        &_logo
+            margin-top: 16px
+        &_phone
+            font-size: 12px
+            font-weight: 400
+            text-transform: uppercase
+            margin-top: 11px
+        &_btn
+            width: 110px
+            height: 20px
+            font-size: 9px
+            margin-top: 5px
+    .promo
+        min-height: 400px
+        padding: 93px 0 35px 0
+        &_descr
+            display: none
+        &_heading
+            font-size: 30px
+            padding: 0 24px
+            line-height: 35px
+        &_subheading
+            font-size: 20px
+            margin-top: 33px
+            padding: 0 10px
+            line-height: 30px
+        &_btn
+            width: 210px
+            height: 50px
+    .menu
+        width: 85%
+    .title
+        font-size: 16px
+        margin-top: 16px
+    .subtitle
+        font-size: 14px
+        margin-top: 9px
+    
+    .mobile
+        padding-top: 25px
+        &_item
+            width: 290px
+            height: 254px
+            padding-top: 80px
+            &_subtitle
+                font-size: 18px
+            &_plus
+                bottom: 35px
+    .car
+        padding-top: 25px
+        height: 393px
+        .title
+            display: none
+        .subtitle
+            display: none
+        &_img
+            width: 296px
+        &_promo
+            margin-top: 23px
+    .world
+        padding-top: 25px
+        min-height: 360px
+        a
+            font-size: 15px
+            bottom: 29px
+    .require
+        padding-top: 25px
+        &_title
+            font-size: 16px
+        &_list
+            li
+                font-size: 14px
+                margin-bottom: 0
+        &_descr
+            font-size: 14px
+    footer
+        .footer_wrapper
+            padding: 0 19px 0 19px
+        .links 
+            width: 100%
+            justify-content: center
+            &_big
+                font-size: 14px
+                margin-right: 7px
+        .small_links
+            width: 100%
+            flex-wrap: wrap
+            justify-content: center
+            a
+                margin: 0 7px
+        .footer_divider
+            width: 255px
+    
+                    
+            
+
+
+    
