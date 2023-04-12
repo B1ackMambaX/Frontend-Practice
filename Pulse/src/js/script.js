@@ -23,6 +23,7 @@ const descr = document.querySelectorAll('.catalog-item__list');
 const linksToCards = document.querySelectorAll('.catalog-item__back');
 const cards = document.querySelectorAll('.catalog-item__content');
 
+//Catalog tabs
 function pagesSwitcher(tabsWrapper, curTab, activityClassTabs, pages, activityClassPages){
     for(let i = 0; i < tabsWrapper.children.length; i++) {
         if(tabsWrapper.children[i] == curTab){
@@ -42,6 +43,7 @@ tabs.forEach((elem, key, arr) => {
     });
 });
 
+//Catalog items switcher
 linksToDescr.forEach((elem, key) => {
     elem.addEventListener('click', (event) => {
         descr[key].classList.add('catalog-item__list_active');
@@ -57,5 +59,23 @@ linksToCards.forEach((elem, key) => {
         event.preventDefault();
     });
 });
+
+//Modal
+$(document).ready(function(){
+    $('[data-modal=consultation]').on('click', () => {
+        $('.overlay, #consultation').fadeIn('slow');
+    });
+    $('.modal__close').on('click', () => {
+        $('.overlay, #consultation, #thanks, #order').fadeOut('slow');
+    });
+
+    $('.button_mini').each((i) => {
+        $(this).on('click', () => {
+            $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
+            $('.overlay, #order').fadeIn('slow');
+        });
+    });
+});
+
 
 	  
