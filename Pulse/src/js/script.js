@@ -43,16 +43,18 @@ tabs.forEach((elem, key, arr) => {
 });
 
 linksToDescr.forEach((elem, key) => {
-    elem.addEventListener('click', () => {
+    elem.addEventListener('click', (event) => {
         descr[key].classList.add('catalog-item__list_active');
         cards[key].classList.remove('catalog-item__content_active');
+        event.preventDefault();
     });
 });
 
 linksToCards.forEach((elem, key) => {
-    elem.addEventListener('click', () => {
+    elem.addEventListener('click', (event) => {
         descr[key].classList.remove('catalog-item__list_active');
         cards[key].classList.add('catalog-item__content_active');
+        event.preventDefault();
     });
 });
 
