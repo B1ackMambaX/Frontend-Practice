@@ -60,22 +60,50 @@ linksToCards.forEach((elem, key) => {
     });
 });
 
-//Modal
+
 $(document).ready(function(){
-    $('[data-modal=consultation]').on('click', () => {
+    //Modal
+    $('[data-modal=consultation]').on('click', function() {
         $('.overlay, #consultation').fadeIn('slow');
     });
-    $('.modal__close').on('click', () => {
+    $('.modal__close').on('click', function() {
         $('.overlay, #consultation, #thanks, #order').fadeOut('slow');
     });
 
-    $('.button_mini').each((i) => {
-        $(this).on('click', () => {
+    $('.button_mini').each(function(i) {
+        $(this).on('click', function() {
             $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
             $('.overlay, #order').fadeIn('slow');
         });
     });
+    //Validation
+    validateForm('#main-form');
+    validateForm("#consultation form");
+    validateForm('#order form');
+    //Phone mask
+    $('input[name=phone]').mask("+7 (999) 999-99-99");
 });
 
+function validateForm(form){
+    $(form).validate({
+        rules:{
+            name:"required",
+            phone:"required",
+            email: {
+                required: true,
+                email: true
+            }
+        },
+    
+        messages: {
+            name: "Пожалуйста, введите свое имя",
+            email: {
+              required: "Пожалуйста, введите свою почту",
+              email: "Неправильно введен адрес почты"
+            },
+            phone: "Пожалуйста, введите свой номер телефона"
+        }
+    });
+}
 
 	  
