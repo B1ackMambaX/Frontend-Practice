@@ -1,4 +1,6 @@
-const menu  = document.querySelector('.menu');
+const menu  = document.querySelector('.menu'),
+        percents = document.querySelectorAll('.skills__ratings-percents'),
+        scales = document.querySelectorAll('.skills__ratings-scale span');
 
 //Menu visability switcher
 document.querySelector('.hamburger').addEventListener('click', () => {
@@ -7,4 +9,9 @@ document.querySelector('.hamburger').addEventListener('click', () => {
 
 document.querySelector('.menu__close').addEventListener('click', () => {
     menu.classList.remove('active');
+});
+
+//Percents counters
+percents.forEach((item, number) => {
+    scales[number].style.width = item.innerHTML;
 });

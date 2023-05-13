@@ -1,0 +1,82 @@
+.skills {
+    padding-top: 120px;
+
+    &__title {
+        position: relative;
+        text-align: center;
+        @include before_circle;
+        &::before {
+            top: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__subtitle {
+        text-align: center;
+    }
+    &__frameworks {
+        display: grid;
+        grid-template: repeat(2, 270px) / repeat(4, 270px);
+        grid-auto-rows: 270px;
+        gap: 13px 13px;
+        justify-content: center;
+        margin-top: 60px;
+    }
+    &__framework {
+        border: 1px solid black;
+        padding: 30px 30px 25px 30px;
+        &-icon {
+            display: flex;
+            align-items: center;
+            min-height: 65px;
+        }
+        h3 {
+            margin-top: 20px;
+            margin-bottom: 0;
+        }
+        &-descr {
+            margin-top: 15px;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+
+    &__ratings {
+        display: grid;
+        grid-template-columns: repeat(3, 350px);
+        grid-template-rows: repeat(2, 70px);
+        row-gap: 30px;
+        column-gap: 45px;
+        grid-auto-rows: 70px;
+        margin-top: 120px;
+
+        &-item {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(34px, auto));
+            grid-template-rows: repeat(2, minmax(14px, auto));
+            align-content: space-between;
+        }
+        &-title {
+            position: relative;
+            padding-left: 15px;
+            padding-top: 2px;
+            @include before_circle;
+        }
+        &-percents {
+            justify-self: end;
+        }
+        &-scale {
+            height: 14px;
+            width: 350px;
+            background-color: #E8E4DE;
+            border-radius: 4px;
+            grid-column: 1/3;
+            span {
+                display: block;
+                height: 100%;
+                background-color: $main-color;
+                border-radius: 4px;
+            }
+        }
+    }
+}
