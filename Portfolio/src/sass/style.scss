@@ -1,5 +1,8 @@
 @import 'libs/bootstrap-reboot.min';
+
 @import 'base/fonts';
+@import 'base/variables';
+@import 'base/mixins';
 
 * {
     font-family: 'Poppins', sans-serif;
@@ -7,3 +10,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+@import 'blocks/promo';
+@import 'blocks/title';
+@import 'blocks/buttons';
+@import 'blocks/sidepanel';
+@import 'blocks/menu';
