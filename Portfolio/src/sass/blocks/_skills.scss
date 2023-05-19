@@ -1,19 +1,6 @@
 .skills {
     padding-top: 120px;
 
-    &__title {
-        position: relative;
-        text-align: center;
-        @include before_circle;
-        &::before {
-            top: -5px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-    }
-    &__subtitle {
-        text-align: center;
-    }
     &__frameworks {
         display: grid;
         grid-template: repeat(2, 270px) / repeat(4, 270px);
