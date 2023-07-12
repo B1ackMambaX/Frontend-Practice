@@ -1,0 +1,22 @@
+{
+	"env": {
+		"browser": true,
+		"es2021": true
+	},
+	"extends": ["airbnb-base", "prettier"],
+	"parserOptions": {
+		"ecmaVersion": "latest"
+	},
+	"rules": {
+		"no-plusplus": ["warn", { "allowForLoopAfterthoughts": true }],
+		"eqeqeq": "warn",
+		"no-shadow": "warn",
+		"spaced-comment": "off",
+		"one-var": "off",
+		"no-unused-expressions": ["error", { "allowTernary": true }],
+		"semi": "error",
+		"no-return-await": "off",
+		"default-case": "off"
+	},
+	"ignorePatterns": ["node_modules", "gulpfile.js", "dist"]
+}
