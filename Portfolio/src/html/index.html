@@ -62,12 +62,12 @@
 
                 <nav>
                     <ul class="menu__list">
-                        <li class="menu__link"><a href="#">ПРО МЕНЯ</a></li>
-                        <li class="menu__link"><a href="#">МОЙ ОПЫТ</a></li>
-                        <li class="menu__link"><a href="#">МОИ НАВЫКИ</a></li>
-                        <li class="menu__link"><a href="#">МОИ РАБОТЫ</a></li>
-                        <li class="menu__link"><a href="#">ПРАЙС-ЛИСТ</a></li>
-                        <li class="menu__link"><a href="#">КОНТАКТЫ</a></li>
+                        <li class="menu__link"><a href="#aboutme">ПРО МЕНЯ</a></li>
+                        <li class="menu__link"><a href="#expirience">МОЙ ОПЫТ</a></li>
+                        <li class="menu__link"><a href="#skills">МОИ НАВЫКИ</a></li>
+                        <li class="menu__link"><a href="#portfolio">МОИ РАБОТЫ</a></li>
+                        <li class="menu__link"><a href="#prices">ПРАЙС-ЛИСТ</a></li>
+                        <li class="menu__link"><a href="#contacts">КОНТАКТЫ</a></li>
                     </ul>
                 </nav>
 
@@ -79,8 +79,16 @@
             </div>
             <div class="menu__overlay"></div>
         </div>
+        
+        <header class="bar">
+            <div class="hamburger">
+                <span></span>
+                <span class="long"></span>
+                <span></span>
+            </div>
+        </header>
 
-        <section class="promo">
+        <section class="promo" id="promo">
             <div class="hamburger">
                 <span></span>
                 <span class="long"></span>
@@ -91,13 +99,13 @@
                 <div class="title title_fz-16 promo__subtitle">Меня зовут Александра Смит</div>
                 <h1 class="title title_fz-48 promo__title">Я web-разработчик из города Москва</h1>
                 <div class="promo__btns">
-                    <a href="#" class="promo__link btn">Портфолио</a>
-                    <a href="#" class="promo__link">Про меня</a>
+                    <a href="#portfolio" class="promo__link btn">Портфолио</a>
+                    <a href="#aboutme" class="promo__link">Про меня</a>
                 </div>
             </div>
         </section>
 
-        <section class="about">
+        <section class="about" id="aboutme">
             <div class="container">
                 <div class="about__wrapper">
                     <div class="about__photo">
@@ -143,7 +151,7 @@
             </div>
         </section>
 
-        <section class="expirience">
+        <section class="expirience" id="expirience">
             <div class="container">
                 <h2 class="title_main title title_fz-16">Опыт</h2>
                 <div class="title_sub title title_fz-36">Чем я буду полезна</div>
@@ -222,7 +230,7 @@
             </div>
         </section>
 
-        <section class="skills">
+        <section class="skills" id="skills">
             <div class="container">
                 <h2 class="title title_fz-16 title_main">Навыки</h2>
                 <div class="title title_fz-36 title_sub">Что я использую в работе</div>
@@ -333,7 +341,7 @@
             </div>
         </section>
 
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <div class="container">
                 <h2 class="title title_fz-16 title_main">Портфолио</h2>
                 <div class="title title_fz-36 title_sub">Мои работы</div>
@@ -350,7 +358,7 @@
             </div>
         </section>
 
-        <section class="prices">
+        <section class="prices" id="prices">
             <div class="container">
                 <h2 class="title title_fz-16 title_main">Прайс-лист</h2>
                 <div class="divider"></div>
@@ -395,7 +403,7 @@
             </div>
         </section>
 
-        <section class="contacts">
+        <section class="contacts" id="contacts">
             <div class="container">
                 <div class="contacts__wrapper">
                     <div class="contacts__photo">
@@ -417,12 +425,12 @@
 
                         <form action="#" class="contacts__form">
                             <div class="contacts__input">
-                                <input name="name" id="name" type="text">
+                                <input name="name" id="name" type="text" required>
                                 <label for="name">Ваше имя</label>
                             </div>
 
                             <div class="contacts__input">
-                                <input name="email" id="email" type="email">
+                                <input name="email" id="email" type="email" required>
                                 <label for="email">Ваша почта</label>
                             </div>
 
@@ -433,8 +441,7 @@
                             <div class="contacts__triggers">
                                 <button class="contacts__btn btn">Отправить сообщение</button>
                                 <div class="contacts__policy">
-                                    <input required type="checkbox">
-                                    <span>Я согласен(а) с <a href="#">политикой конфиденциальности</a></span>
+                                    <span>Отправляя эту форму вы соглашаетесь с <a href="#">политикой конфиденциальности</a></span>
                                 </div>
                             </div>
                             
@@ -444,7 +451,14 @@
             </div>
         </section>
 
+        <div class="popup">
+            <div class="popup__message"></div>
+        </div>
 
-        <script src="js/script.js"></script>
+        <a href="#promo" class="pageUp"><img src="icons/circle-chevron-up-solid.svg" alt="Up"></a>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+        <script src="js/script.bundle.js"></script>
     </body>
 </html>

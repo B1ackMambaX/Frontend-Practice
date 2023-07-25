@@ -1,17 +1,14 @@
-const menu  = document.querySelector('.menu'),
-        percents = document.querySelectorAll('.skills__ratings-percents'),
-        scales = document.querySelectorAll('.skills__ratings-scale span');
+import initMenu from './modules/menu';
+import linksScroll from './modules/scroll';
+import initAnimations from './modules/animations';
+import initForm from './modules/form';
 
-//Menu visability switcher
-document.querySelector('.hamburger').addEventListener('click', () => {
-    menu.classList.add('active');
-});
 
-document.querySelector('.menu__close').addEventListener('click', () => {
-    menu.classList.remove('active');
-});
+document.addEventListener("DOMContentLoaded", () => {
+    const menu = document.querySelector(".menu");
 
-//Percents counters
-percents.forEach((item, number) => {
-    scales[number].style.width = item.innerHTML;
+    initMenu(menu);
+    linksScroll(menu);
+    initAnimations();
+    initForm();
 });
