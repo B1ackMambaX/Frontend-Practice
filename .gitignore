@@ -10,7 +10,8 @@
 /build
 
 # misc
-.jshintrc
+**/.eslintrc.json
+**/db.json
 **/.DS_Store
 .env.local
 .env.development.local
