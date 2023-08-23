@@ -7,12 +7,13 @@
 /coverage
 
 # production
-/build
+**/build
 
 # misc
 **/.eslintrc.json
 **/db.json
 **/.DS_Store
+**/.vscode
 .env.local
 .env.development.local
 .env.test.local
