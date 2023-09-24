@@ -1,0 +1,9 @@
+.heading {
+    font-size: 22px;
+    line-height: 29px;
+    font-weight: 700;
+    &_white {
+        color: #fff;
+        text-transform: uppercase;
+    }
+}
