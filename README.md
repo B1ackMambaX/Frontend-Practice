@@ -27,16 +27,16 @@
 **Деплой:** [тык](https://b1ackmambax.github.io/Frontend-Practice/Portfolio/dist)
 
 ## Employees
-*Мини CRUD приложение написанное на классовых компонентах React.*
+*Мини CRUD приложение написанное на классовых компонентах React.*  
 **Стэк:** React, Scss, Bootstrap.  
 **Деплой:** [тык](https://employees-orcin.vercel.app)
 
 ## Marvel
-*SPA приложение. Мини вики по вселенной Marvel*
+*SPA приложение. Мини вики по вселенной Marvel*  
 **Стэк:** React, Scss, React-router, React-helmet, Formik.  
 **Деплой:** [тык](https://marvel-puq2h63tp-b1ackmambax.vercel.app)
 
 ## AdminPanel
-*Мини CRUD приложение*
+*Мини CRUD приложение*  
 **Стэк:** React, Scss, Bootstrap, Redux.  
 **Деплой:** [тык](https://frontend-practice-vert.vercel.app) (Фейк API для данного проекта работает через раз, проверить удаление/добавление сущностей можно [тут](https://vercel.com/b1ackmambax/dashboard-fakeapi))
