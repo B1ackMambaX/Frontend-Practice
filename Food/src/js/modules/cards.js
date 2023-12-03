@@ -36,7 +36,7 @@ function cards(wrapper) {
 		}
 	}
 
-	getResource("http://localhost:3000/menu").then((data) => {
+	getResource("https://dashboard-fakeapi.vercel.app/menu").then((data) => {
 		data.forEach(({ img, altimg, title, descr, price }) => {
 			new MenuCard(img, altimg, title, descr, price, wrapper).render();
 		});
